@@ -1,3 +1,18 @@
 {
-    "extends": "airbnb-base"
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": "airbnb-base",
+    "globals": {
+        "util": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "script"
+    },
+    "rules": {
+        "no-console": "off",
+        "no-plusplus": "off"
+    }
 }

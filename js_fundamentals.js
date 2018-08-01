@@ -1,3 +1,5 @@
+'use strict';
+
 /** Task#1
 * Output even numbers in the loop
 * Use the for loop to output even numbers from 2 to 10
@@ -9,8 +11,8 @@ while (num < 100) {
   console.log(num);
 } // task#1 > solution 1
 
-for (let n = 2; n <= 10; n++) {
-  if (n % 2 == 0) {
+for (let n = 2; n <= 10; n) {
+  if (n % 2 === 0) {
     console.log(n);
   }
 } // task#1 > solution 2
@@ -35,7 +37,7 @@ while (number <= 100 && number != null);
 
 for (let primeNumber = 2; ; primeNumber++) {
   for (let modNumber = 2; modNumber < primeNumber; modNumber++) {
-    if (primeNumber % modNumber == 0) continue;
+    if (primeNumber % modNumber === 0) continue;
   }
   console.log(primeNumber);
 }
